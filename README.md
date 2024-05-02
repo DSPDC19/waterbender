@@ -2,7 +2,8 @@
 
 #Participantes: 
 - Jose Luis Mañon - Profesor
-- Adrian Alberto Santana Machuca - Estudiante
+- Diana Pancorbo -ORIIIII 'v'
+- Adrian Santana -Estudiante
 
 
 Para ejecutar el proyecto en su pc local
