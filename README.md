@@ -2,6 +2,7 @@
 
 #Participantes: 
 - Jose Luis Mañon - Profesor
+- Diana Pancorbo -ORIIIII 'v'
 
 
 Para ejecutar el proyecto en su pc local
