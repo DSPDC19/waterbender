@@ -2,6 +2,7 @@
 
 #Participantes: 
 - Jose Luis Mañon - Profesor
+- Adrian Alberto Santana Machuca - Estudiante
 
 
 Para ejecutar el proyecto en su pc local
