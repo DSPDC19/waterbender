@@ -1,5 +1,9 @@
 # waterbender
 
+#Participantes: 
+- Jose Luis Mañon - Profesor
+
+
 Para ejecutar el proyecto en su pc local
 
 1. Clonar el repositorio
