@@ -3,7 +3,7 @@
 #Participantes: 
 - Jose Luis Mañon - Profesor
 - Diana Pancorbo -ORIIIII 'v'
-- Joelo Juzman - El mejol
+
 
 Para ejecutar el proyecto en su pc local
 
