@@ -4,6 +4,7 @@
 - Jose Luis Mañon - Profesor
 - Diana Pancorbo -ORIIIII 'v'
 - Adrian Santana -Estudiante
+- Elisveth Feliz -Estudiante
 
 
 Para ejecutar el proyecto en su pc local
