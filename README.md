@@ -3,6 +3,9 @@
 #Participantes: 
 - Jose Luis Mañon - Profesor
 - Diana Pancorbo -ORIIIII 'v'
+- Joelo Juzman - Estudiante
+- Adrian Machuka - Esclavo
+- Elisveth Feliz - Estudiante
 
 
 Para ejecutar el proyecto en su pc local
