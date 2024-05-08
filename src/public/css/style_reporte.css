@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800&family=Open+Sans:wght@300;400;600;800&display=swap');
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr; /* Divide en dos columnas iguales */
+    width: 100%;
+}
+
+.left-area {
+    background-color: #f0f0f0;
+    padding: 20px;
+    background-color: #3e15c9;
+    height: 675px;
+    color: #ffffff;
+    overflow: hidden;
+
+}
+
+.right-area {
+    background-color: #F3F6FF;
+    padding: 20px;
+    height: 675px;
+
+}
+
+*{
+    margin: 0%;
+    font-family: 'Inter';
+}
+
+.Logo_size{
+    padding-top: 30px;
+    width: 80px;
+    height: 80px;
+    padding-left: 0px;
+}
+
+.Logo_texto{
+  padding-left: 15px;
+  width: 120px;
+  height: 75px;
+}
+
+.Separar{
+    margin-bottom: 60px;
+}
+
+.Separar_izquierda{
+    margin-left: 40px;
+}
+
+.Lista_estilo{
+    list-style: none;
+    padding: 0px;
+    font-size: 24px;
+}
+h1{
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #0C1B6B;
+}
+
+h4{
+    margin-bottom: 20px;
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+h5{
+    margin-bottom: 40px;
+}
+
+h6{
+    font-size: 18px;
+}
+
+.Alinear_derecha{
+    text-align:right;
+}
+
+.Cuadro{
+    text-align: center;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    width: 500px;
+    padding-bottom: 40px;
+}
+
+.Cuadros{
+   display: grid;
+   grid-template-columns:1fr 2fr;
+   gap: 20px;
+}
+
