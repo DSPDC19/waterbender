@@ -1,24 +1,38 @@
-const express = require("express");
+import 'dotenv/config';
+import express from "express";
+import { dirname, join } from "path";
+import { fileURLToPath } from "url";
+import { initializeApp } from "firebase/app";
+import { getDatabase, ref, onValue } from "firebase/database";
 
-const path = require("path");
+import indexRouter from './route/index.js';
 
-const port=process.env.PORT||3000;
-
+const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
+const port = process.env.PORT || 3000;
 
-app.set("views", path.join(__dirname, "views"));
+// Configurar Firebase
+const firebaseConfig = {
+  apiKey: process.env.API_KEY,
+  authDomain: process.env.AUTH_DOMAIN,
+  databaseURL: process.env.DATABASE_URL,
+  projectId: process.env.PROJECT_ID,
+  storageBucket: process.env.STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGING_SENDER_ID,
+  appId: process.env.APP_ID
+};
+
+const firebaseApp = initializeApp(firebaseConfig);
+const db = getDatabase(firebaseApp);
+const temperaturaRef = ref(db, "/main/temperatura/");
+
+app.set("views", join(__dirname, "views"));
 app.set("view engine", "ejs");
 
+app.use(express.static(join(__dirname,"public")));
 
-app.use(express.static(path.join(__dirname,"./public")));
+app.use(indexRouter);
 
-
-app.get("/", (req, res) => {res.render("./pages/index")})
-app.get("/dashboard", (req, res) => {res.render("./pages/dashboard")})
-app.get("/report", (req, res) => {res.render("./pages/report")})
-app.get("/settings", (req, res) => {res.render("./pages/settings")})
-app.get("/consumption", (req, res) => {res.render("./pages/consumption")})
-
-app.listen(port,()=>{
-    console.log(`Server en http://localhost:${port}`)
+app.listen(port, () => {
+  console.log(`Servidor corriendo en http://localhost:${port}`);
 });
