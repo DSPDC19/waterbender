@@ -16,7 +16,7 @@ body{
 
 .seccion-con-fondo {
     width: 100%;
-    background-image: url('/assets-Pagina/img/fondo.png'); 
+    background-image: url('./img/fondo.png'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -25,7 +25,7 @@ body{
 
   .seccion-con-fondo-aboutUs {
     width: 100%;
-    background-image: url('/assets-Pagina/img/fondo-aboutus.png'); 
+    background-image: url('./img/fondo-aboutus.png'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -34,7 +34,7 @@ body{
 
   .seccion-con-fondo-blog {
     width: 100%;
-    background-image: url('/assets-Pagina/img/fondo3.png'); 
+    background-image: url('./img/fondo3.png'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -43,7 +43,7 @@ body{
 
   .seccion-con-contact {
     width: 100%;
-    background-image: url('/assets-Pagina/img/fondoidea1.png'); 
+    background-image: url('./img/fondoidea1.png'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
