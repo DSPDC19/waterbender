@@ -10,13 +10,13 @@ html{
 }
 
 body{
-    width: 99%;
+    width: 100%;
     margin: 0 auto;
 }
 
 .seccion-con-fondo {
     width: 100%;
-    background-image: url('./img/fondo.png'); 
+    background-image: url('../img/fondo.png'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -25,7 +25,7 @@ body{
 
   .seccion-con-fondo-aboutUs {
     width: 100%;
-    background-image: url('./img/fondo-aboutus.png'); 
+    background-image: url('../img/fondo-aboutus.png'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -34,7 +34,7 @@ body{
 
   .seccion-con-fondo-blog {
     width: 100%;
-    background-image: url('./img/fondo3.png'); 
+    background-image: url('../img/fondo3.png'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -43,12 +43,21 @@ body{
 
   .seccion-con-contact {
     width: 100%;
-    background-image: url('./img/fondoidea1.png'); 
+    background-image: url('../img/fondoidea1.png'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
     margin: 0 auto;
   }
+
+  a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
 
 h1{
     font-size: 120px;
