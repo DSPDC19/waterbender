@@ -17,7 +17,6 @@
 <body>
     <style>
         #map { 
-            
         height: 400px;
         width: 95%;
         position: relative;
@@ -31,30 +30,29 @@
         <div class="left">
             
         <div>
-            <img class="logo" src="/waterbender/src/public/img/logowaterbender.png">
+            <img class="logo" src="./img/logowaterbender.png">
         </div>
         <div class="logotext">
             <p>Water <br> Bender</p>
         </div>
          <div class="menu">
-            <img src="./img/Country.png" alt="" style="position: relative; right: 30px; top: 110px;">
-            <img src="./img/Analyze.png" alt="" style="position: relative; right: 30%; top: 175px;">
-            <img src="./img/🦆 icon _dashboard_.png" alt="" style="position: relative; right: 50%; top: 40px;">
-            <img src="./img/Services.png" alt="" style="position: relative; right: 66%; top: 227px;">
+            <img src="./img/Country.png" alt="" style="position: relative; right: 30px; top: 70px; margin-left: 10px;">
+            <img src="./img/Analyze.png" alt="" style="position: relative; right: 30%; top: 150px;">
+            <img src="./img/🦆 icon _dashboard_.png" alt="" style="position: relative; right: 43%; top: 1px;">
+            <img src="./img/Services.png" alt="" style="position: relative; right: 66%; top: 210px;">
 
             <div class="espaciado">
-            <a href="$" class="link">Home</a>
+            <a href="dashboard" class="link" style="position: relative; left: 23px;">Home</a>
             </div>
             <div class="espaciado">
-            <a href="$" class="link">
-                The Country's consumption</a>
+            <a href="consumption" class="link" style="position: relative; left: 23px;">
+                <p >The Country's <br> consumption</p></a>
             </div>
             <div class="espaciado">
-            
-            <a href="$" class="link">Reports</a>
+            <a href="report" class="link" style="position: relative; left: 23px;">Reports</a>
             </div>
             <div class="espaciado">
-            <a href="$" class="link">Settings</a>
+            <a href="$" class="link" style="position: relative; left: 23px;">Settings</a>
                 </div>
         </div>
         <script src="./js/graph.js"></script>
@@ -67,7 +65,7 @@
             <div class="user">
                 José Luis Mañon
             </div>
-            <img src="./img/Male User.png" alt="" style="float: right; position: relative; top: 13%; left: 100%;">
+            <img src="./img/Male User.png" alt="" style="float: right; position: relative; top: 2%; left: 100%;">
 
         <p class="title">Information</p>
         <p class="texto">View graphic report based in country water use.</p>
@@ -80,10 +78,9 @@
         <div class="mapcontainer">
         <div class="consumptiontitle">
         <h3>Consumption of non-potable water in the <br> Dominican Republic</h3>
+        <p style="margin-bottom: 10px;">February 2024</p>
         </div>
         <div class="moth">
-        <p>February 2024</p>
-        <div class="espaciado"></div>
         <div id="map"></div>
             </div>
          </div>
@@ -91,7 +88,7 @@
         <div class="graph">
             <div class="totaltext">
             <p>February 2024</p>
-            <p>Non-Potable water</p>
+            <p style="position: relative; right: 3%;">Non-Potable water</p>
             <h1 style="position: relative; right: 15%;">Santo Domingo</h1>
             <h1 style="position: relative; left: 9%;">4.3K</h1>
             <p>February 2024</p>
@@ -113,7 +110,7 @@
   crossorigin=""></script>
 
   
-  <script src="dominican-republic-with-regions_.js"></script>
+  <script src="../js/dominican-republic-with-regions_.js"></script>
 
 
   <script>

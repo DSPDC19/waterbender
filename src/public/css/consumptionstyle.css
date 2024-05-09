@@ -2,11 +2,8 @@
 {
     margin: 0;
     padding: 0;
-    font-family: "Inria Sans", sans-serif;
     font-style: normal;
 }
-
-
 
 .left
 {
@@ -32,15 +29,15 @@ html, body {
     width: 35%;
     float: left;
     margin-right: 15px;
-    margin-left: 15px;
+    margin-left: 5px;
     margin-top: 20%;
   }
 
   .logotext
   {
+    font-family: "Forum", serif;
     margin-top: 22%;
     display: flex;
-    font-family: "Forum", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 45px;
@@ -50,17 +47,17 @@ html, body {
   .menu
   {
     margin: 10%;
+    right: 30%;
     font-family: "Inria Sans", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
     color: #fbfafe;
-    font-size: 30px;
+    font-size: 24px;
     transition: background-color 0.3s ease;
   }
 
   .link
   {
-    margin-bottom: 100000000000%;
     background-color: #3e15c9;
     color: #fff;
     text-decoration: none;
@@ -71,8 +68,10 @@ html, body {
   
   .espaciado
   {
-    margin-bottom: 10px;
-    margin-left: 20px;
+    position: relative;
+    margin: 10px;
+    bottom: 49px;
+    margin-bottom: 30px;
   }
 
   span
@@ -85,11 +84,14 @@ html, body {
   }
   .mapcontainer
   {
+    text-align: center;
+
     position: relative;
-    height: 60%;
     width: 100%;
-    top: 20%;
-    left: 15%;
+    top: 5%;
+    left: 5%;
+    margin: 0%;
+    padding: 20px;
     background-color: white;
     border-radius: 10%;
   }
@@ -98,7 +100,7 @@ html, body {
   {
     position: relative;
     left: 15%;
-    top: 15%;
+    top: 8%;
     font-family: "Inria Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -112,7 +114,7 @@ html, body {
     font-family: "Inria Sans", sans-serif;
     font-size: 30px;
     font-weight: 300;
-    top: 15%;
+    top: 8%;
     left: 15%;
 
 
@@ -120,13 +122,13 @@ html, body {
   .consumptiontitle
   {
     color: #071c87;
-    display:inline-flex;
     position: relative;
     top: 1%;
-    left: 10%;
     font-family: "Inria Sans", sans-serif;
     font-size: 25px;
     font-weight: 400;
+    margin: 0px;
+    padding: 0px;
   }
 
   
@@ -141,13 +143,16 @@ html, body {
     font-weight: 400;
   }
 
+
   .graph
   {
     position: relative;
     width: 400px;
-    top: 44%;
+    top: 31%;
     height: 60%;
-    left: 10%;
+    left: 6%;
+    margin: 0%;
+    padding: 20px 5px 20px 20px;
     background-color: white;
     border-radius: 10%;
   }
@@ -163,7 +168,7 @@ html, body {
     color: #071c87;
     position: relative;
     top: 2%;
-    left: 35%;
+    left: 30%;
     font-family: "Inria Sans", sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -171,18 +176,20 @@ html, body {
 
   .your
   {
+    font-family: "Inria Sans", sans-serif;
     position: relative;
     display: inline-flex;
     left: 130%;
-    top: 10%;
+    text-align: center;
   }
 
   .user
   {
+    font-family: "Inria Sans", sans-serif;
     position: relative;
     left: 70%;
     float: right;
-    top: 16%;
+    top: 5%;
     
   }
 

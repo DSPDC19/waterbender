@@ -26,7 +26,7 @@ router.get("/Pedrito", (req, res) => {
 });
 
 router.get("/report", (req, res) => { 
-    res.render("report");
+    res.render("./pages/index_reporte");
 });
 
 router.get("/settings", (req, res) => { 
@@ -34,7 +34,7 @@ router.get("/settings", (req, res) => {
 });
 
 router.get("/consumption", (req, res) => { 
-    res.render("consumption"); 
+    res.render("./pages/consumption"); 
 });
 
  export default router;
