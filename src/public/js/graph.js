@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
         labels: labels,
         datasets: [{
             label: 'Consumption',
-            data: [0, 10, 0, 33, 4, 9],
+            data: [0, 10, 0, 20, 40, 70],
             fill: false,
             borderColor: 'blue',
             tension: 0.1
