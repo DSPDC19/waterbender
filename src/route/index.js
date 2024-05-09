@@ -25,7 +25,7 @@ router.get("/Pedrito", (req, res) => {
     res.render("./pages/Pedrito");
 });
 
-router.get("/report", (req, res) => { 
+router.get("/index_reporte", (req, res) => { 
     res.render("./pages/index_reporte");
 });
 
