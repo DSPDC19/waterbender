@@ -44,6 +44,11 @@ html, body {
     color: white;
   }
 
+  .Color_blanco{
+    background-color: white;
+    border-radius: 10px;
+    }
+
   .menu
   {
     margin: 10%;
