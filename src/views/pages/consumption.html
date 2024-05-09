@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <link rel="stylesheet" href="/waterbender/src/public/css/consumptionstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Forum&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <style>
+        #map { 
+            
+        height: 400px;
+        width: 95%;
+        position: relative;
+        right: 35%;
+        border-radius: 10px;
+        }
+
+    </style>
+
+    <div class="container">
+        <div class="left">
+            
+        <div>
+            <img class="logo" src="/waterbender/src/public/img/logowaterbender.png">
+        </div>
+        <div class="logotext">
+            <p>Water <br> Bender</p>
+        </div>
+         <div class="menu">
+            <img src="/waterbender/src/public/img/Country.png" alt="" style="position: relative; right: 30px; top: 110px;">
+            <img src="/waterbender/src/public/img/Analyze.png" alt="" style="position: relative; right: 30%; top: 175px;">
+            <img src="/waterbender/src/public/img/🦆 icon _dashboard_.png" alt="" style="position: relative; right: 50%; top: 40px;">
+            <img src="/waterbender/src/public/img/Services.png" alt="" style="position: relative; right: 66%; top: 227px;">
+
+            <div class="espaciado">
+            <a href="$" class="link">Home</a>
+            </div>
+            <div class="espaciado">
+            <a href="$" class="link">
+                The Country's consumption</a>
+            </div>
+            <div class="espaciado">
+            
+            <a href="$" class="link">Reports</a>
+            </div>
+            <div class="espaciado">
+            <a href="$" class="link">Settings</a>
+                </div>
+        </div>
+        <script src="/waterbender/src/public/js/graph.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.js"></script>
+
+        </div> <!--  Esto es el fin del div del left -->
+
+        <div class="right">
+            <div class="user">
+                José Luis Mañon
+            </div>
+            <img src="/waterbender/src/public/img/Male User.png" alt="" style="float: right; position: relative; top: 13%; left: 100%;">
+
+        <p class="title">Information</p>
+        <p class="texto">View graphic report based in country water use.</p>
+        <div class="your">
+            Your <br> consumption
+        </div>
+        <div class="your" style="background-color: blue; color: white; border-radius: 0.25em; margin-left: 5%; display: inline-flexbox; padding: 10px;">
+            Country's <br> consumption
+        </div>
+        <div class="mapcontainer">
+        <div class="consumptiontitle">
+        <h3>Consumption of non-potable water in the <br> Dominican Republic</h3>
+        </div>
+        <div class="moth">
+        <p>February 2024</p>
+        <div class="espaciado"></div>
+        <div id="map"></div>
+            </div>
+         </div>
+        </div>
+        <div class="graph">
+            <div class="totaltext">
+            <p>February 2024</p>
+            <p>Non-Potable water</p>
+            <h1 style="position: relative; right: 15%;">Santo Domingo</h1>
+            <h1 style="position: relative; left: 9%;">4.3K</h1>
+            <p>February 2024</p>
+            <h3 style="position: relative; right: 15%;">Consumption in history</h3>
+            <canvas id="tercer_grafico" ></canvas>
+
+
+        </div>
+        <div>
+            
+        </div>
+        </div>
+        
+
+  </div> <!--  Esto es el fin del div del container -->
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+
+  
+  <script src="dominican-republic-with-regions_.js"></script>
+
+
+  <script>
+var map = L.map('map').setView([18.927842, -70.338333], 8);
+var tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+L.geoJson(drstates).addTo(map);
+  </script>
+
+<script>
+     function getColor(d) {
+    return d >= 1000 ? '#ee0c10' :
+           d >= 500  ? '#eaed26' :      
+           d >= 200  ? '#E31A1C' :
+           d >= 100  ? '#3f9413' :
+           d >= 50   ? '#FD8D3C' :
+           d >= 20   ? '#FEB24C' :
+           d >= 10   ? '#0750ab' :
+                      '#0950a8';
+}
+function style(feature) {
+    return {
+        fillColor: getColor(feature.properties.density),
+        weight: 2,
+        opacity: 1,
+        color: 'white',
+        dashArray: '3',
+        fillOpacity: 0.7
+    };
+}
+
+L.geoJson(drstates, {style: style}).addTo(map);
+</script>
+
+</body>
+</html>
