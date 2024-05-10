@@ -9,8 +9,24 @@ router.get("/dashboard", (req, res) => {
     res.render("./pages/dashboard");
 });
 
-router.get("/report", (req, res) => { 
-    res.render("report");
+router.get("/MizerKids", (req, res) => { 
+    res.render("./pages/MizerKids");
+});
+
+router.get("/MizerBenders", (req, res) => { 
+    res.render("./pages/MizerBenders");
+});
+
+router.get("/MizerKids-Pulpo", (req, res) => { 
+    res.render("./pages/MizerKids-Pulpo");
+});
+
+router.get("/Pedrito", (req, res) => { 
+    res.render("./pages/Pedrito");
+});
+
+router.get("/index_reporte", (req, res) => { 
+    res.render("./pages/index_reporte");
 });
 
 router.get("/settings", (req, res) => { 
@@ -18,7 +34,7 @@ router.get("/settings", (req, res) => {
 });
 
 router.get("/consumption", (req, res) => { 
-    res.render("consumption"); 
+    res.render("./pages/consumption"); 
 });
 
  export default router;

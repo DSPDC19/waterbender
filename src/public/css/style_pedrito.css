@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Macondo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.seccion-con-fondo{
+    width: 100%;
+    background-image: url('../img/fondo-Pedrito.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 0 auto;
+  }
+
+  *{
+    text-align: center;
+    justify-content: center;
+}
+
+html{
+    background-color: #ffffff;
+    font-family: "Inria Sans", sans-serif;
+}
+
+body{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.left{
+    text-align: left;
+    justify-content: left;
+}
+
+.justify{
+    text-align: justify;
+}
+
+.li-header {
+    float: left;
+    padding: 50px 50px 50px 50px; 
+    font-size: 30px;
+    color: #3E15C9;
+  }
+
+  .ul {
+    list-style-type: none;
+    margin: 0px 0px 0px 40px;
+    padding: 0%;
+    overflow: hidden;
+  }
+
+  .contenedor-flex{
+    display: flex;
+    margin: 0%;
+}
+
+.img-logo{
+    width: 270px;
+    margin: 0px 0px 10px 5px;
+}
+
+.div-logo{
+    margin: 0 auto;
+    padding: 0%;
+}
+
+a{
+    color: #3E15C9;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+h1{
+    font-size: 40px;
+    font-family: "Forum", serif;
+    color: #000;
+    margin: 20px 20px 30px 20px;
+    font-weight:400;
+    padding-left: 80px;
+}
+
+h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+    margin: 70px 0px 20px 0px ;
+}
+
+h4{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+    margin: 10px 0px 10px 0px ;
+}
+
+p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+    margin: 0px 0px 10px 0px ;
+}
+
+.article-pedrito{
+    width: 40%;
+    padding: 3% 0% 15% 50%;
+}
+
+button{
+    border-radius: 40px;
+    border-bottom: #ffffff;
+    font-family: "Inria Sans", sans-serif;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #3E15C9;
+}
+
+.a-especial{
+    color: #ffffff;
+}

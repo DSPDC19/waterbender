@@ -1,0 +1,206 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+}
+
+.left
+{
+    height: 100%;
+    width: 20%;
+    background-color: #3e15c9;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .container {
+    height: 100%;
+    width: 100%;
+    background-color: #f3f6ff;
+    display: flex;
+  }
+
+  .logo
+  {
+    width: 35%;
+    float: left;
+    margin-right: 15px;
+    margin-left: 5px;
+    margin-top: 20%;
+  }
+
+  .logotext
+  {
+    font-family: "Forum", serif;
+    margin-top: 22%;
+    display: flex;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+    color: white;
+  }
+
+  .Color_blanco{
+    background-color: white;
+    border-radius: 10px;
+    }
+
+  .menu
+  {
+    margin: 10%;
+    right: 30%;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fbfafe;
+    font-size: 24px;
+    transition: background-color 0.3s ease;
+  }
+
+  .link
+  {
+    background-color: #3e15c9;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.20em;
+    border: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .espaciado
+  {
+    position: relative;
+    margin: 10px;
+    bottom: 49px;
+    margin-bottom: 30px;
+  }
+
+  span
+  {
+    margin: 100px;
+  }
+  .link:hover {
+    background-color: #ffffff;
+    color: #0032b9;
+  }
+  .mapcontainer
+  {
+    text-align: center;
+
+    position: relative;
+    width: 100%;
+    top: 5%;
+    left: 5%;
+    margin: 0%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10%;
+  }
+
+  .title
+  {
+    position: relative;
+    left: 15%;
+    top: 8%;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    color: #3e0fdf;
+  }
+
+  .texto
+  {
+    position: relative;
+    font-family: "Inria Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    top: 8%;
+    left: 15%;
+
+
+  }
+  .consumptiontitle
+  {
+    color: #071c87;
+    position: relative;
+    top: 1%;
+    font-family: "Inria Sans", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  
+  .moth
+  {
+    color: #071c87;
+    position: relative;
+    top: 3%;
+    left: 38%;
+    font-family: "Inria Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+
+  .graph
+  {
+    position: relative;
+    width: 400px;
+    top: 31%;
+    height: 60%;
+    left: 6%;
+    margin: 0%;
+    padding: 20px 5px 20px 20px;
+    background-color: white;
+    border-radius: 10%;
+  }
+
+  #tercer_grafico
+  {
+    position: relative;
+    right: 35%;
+  }
+
+  .totaltext
+  {
+    color: #071c87;
+    position: relative;
+    top: 2%;
+    left: 30%;
+    font-family: "Inria Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .your
+  {
+    font-family: "Inria Sans", sans-serif;
+    position: relative;
+    display: inline-flex;
+    left: 130%;
+    text-align: center;
+  }
+
+  .user
+  {
+    font-family: "Inria Sans", sans-serif;
+    position: relative;
+    left: 70%;
+    float: right;
+    top: 5%;
+    
+  }
+
+  .user img
+  {
+    float: left;
+    bottom: 10%;
+    width: 40px;
+  }

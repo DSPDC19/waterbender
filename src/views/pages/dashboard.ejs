@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style_home.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.js"></script>
+</head>
+<body class="overflow">
+    <!-- Contenedor de todo -->
+    <div class="container">
+        <!-- parte de la izquierda -->
+        <div class="left-area">
+            <!-- Div del Logo -->
+            <div class="Separar">
+                <img src="./img/logowaterbender.png" class="Logo_size">
+                    <img src="./img/Water Bender.png" class="Logo_texto">
+            </div>
+
+            <!-- Div de la lista -->
+            <div>
+                <ul class="Lista_estilo">
+                    <li class="Separar2 Separar_arriba Color_blanco Lista_Color boton_menu"><img width="35px" src="./img/__icon__dashboard_-removebg-preview.png"><p class="En_linea">Home</p></li>
+                    <!-- <li class="Separar2 "><img src="Country.png">The Country's<br> consumption</li> -->
+                    <div class="cuadro_menu Separar2">
+                    <div class="margin_mapa">
+                        <img src="./img/Country.png">
+                    </div>
+                    <div class="En_linea">
+                        <p><a class="a" href="consumption">The country's Consumption</a></p>
+                    </div>
+                </div>
+                <div class="cuadro_menu Separar2">
+                    <div>
+                        <img src="./img/Analyze.png">
+                    </div>
+                   <div class="En_linea">
+                    <p class="margin_mapa"><a class="a" href="index_reporte">Reports</a></p>
+                   </div>
+                   </div>
+                   <div class="cuadro_menu Separar2">
+                    <div>
+                        <img src="./img/Services.png">
+                    </div>
+                   <div class="En_linea">
+                    <p>Settings</p>
+                   </div>
+                   </div>
+                </ul>
+            </div>
+        </div>
+        <!-- Div de la parte derecha -->
+        <div class="right-area">
+            <!-- div de la parte de arriba -->
+            <div class="perfil">
+                <h6> Jose Luis Mañon</h6>  
+                <img class="En_linea " src="./img/Male User.png">
+ 
+            </div>
+            <!-- div para juntar welcome y botones -->
+            <div class="container2">
+            <!-- div de la parte del welcome -->
+            <div class="Separar_izquierda">
+                <h1 class="welcome">Welcome!</h1>
+                <h6 class="Separar">View graphic report based in your water use.</h6>
+            </div>
+            <div class="Cuadros2">
+                <!-- div del primer boton -->
+                <div class="Color_cuadro">
+                    <p class="Separar_enboton">Your <br> consumption</p>
+                </div>
+                <!-- div del segundo boton -->
+                <div class="Color_cuadro Quitar_color" >
+                    <p class="Separar_enboton">The country's <br> consumption</p>
+                </div>
+                <!-- div de los 3 puntos -->
+                <div>
+                    <img class="Centrar_puntos" src="./img/puntos.png" width="25px" height="25px">
+                </div>
+            </div>
+           </div>
+            <!-- Div de los dos cuadros juntos -->
+            <div class="Separar_izquierda Cuadros" >
+                <!-- Div que junta los 2 graficos de circulo -->
+                <div class="Cuadro Cuadros">
+                    <!-- Div del primer grafico -->
+                    <div class="Color_blanco">
+                        <div style="width: 170px; margin-left: 55px;">
+                        <canvas id="primer_grafico" style="width: 20px; height: 20px; width: 20px; height: 20px;"></canvas>
+                        <h4>Today Consumption</h4>
+                        </div>
+                    </div>
+                    <!-- Div del segundo grafico -->
+                    <div class="Color_blanco">
+                        <div style="width: 170px; height: 235px; margin-left: 55px;">
+                       <canvas id="segundo_grafico" style="width: 20px; height: 20px; width: 20px; height: 20px;"></canvas>
+                       <h4>Today Consumption</h4>
+ 
+                        </div>
+                    </div>
+                </div>
+                <!-- div de la parte de consumo -->
+                <div class="Cuadro Color_blanco">
+                    <h4 class="h4e">Total Consumption</h4>
+                    <h5>February 2024</h5>
+                    <!-- div para dividir potable y non-potable -->
+                    <div class="Cuadros Cuadro ">
+                        <!-- potable -->
+                    <div>
+                    <h6>Potable water</h6>
+                    <h1 id="Pot">1.200</h1>
+                    </div>
+                    <!-- non-potable -->
+                    <div>
+                    <h6>Non-potable water</h6>
+                    <h1 id="NonPot">2.300</h1>
+                    </div>
+                    </div>
+                </div>
+                <div style="width: 550px;" class="Color_blanco">
+
+                    <h6 class="margen_grafico">Day of the month of February</h6>
+                    <canvas id="tercer_grafico"></canvas>
+                </div>
+                <div class="Color_blanco">
+                    <h6 class="margen_grafico">Monthly consumption</h6>
+                    <canvas id="cuarto_grafico"></canvas>
+
+                </div>
+            </div>
+       </div>
+    </div>
+</body>
+<script src="../js/home.js"></script>
+<script type="module" src="../js/database.js"></script>
+</html>

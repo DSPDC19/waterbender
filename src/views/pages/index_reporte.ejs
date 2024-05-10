@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/style_reporte.css">
 </head>
-<body>
+<body style="overflow-y: hidden;">
     <!-- Contenedor de todo -->
     <div class="container">
         <!-- parte de la izquierda -->
@@ -20,29 +20,52 @@
             <!-- Div de la lista -->
             <div>
                 <ul class="Lista_estilo">
-                    <li class="Separar">Home</li>
-                    <li class="Separar">The Country's consumption</li>
-                    <li class="Separar">Reports</li>
-                    <li>Settings</li>
+                    <li style="margin-left: 0%;" class="Separar2 Separar_arriba boton_menu"><img width="35px" src="./img/dashboard.png"><p style="margin-left: 10px;" class="En_linea"><a class="a" href="dashboard">Home</a></p></li>
+                    <!-- <li class="Separar2 "><img src="Country.png">The Country's<br> consumption</li> -->
+                    <div class="cuadro_menu Separar2">
+                    <div class="margin_mapa">
+                        <img src="./img/Country.png">
+                    </div>
+                    <div style="margin-left: 10px;" class="En_linea">
+                        <p ><a class="a"  href="consumption">The country's Consumption</a></p>
+                    </div>
+                </div>
+                <div style="padding: 7px;" class="cuadro_menu Separar2 Color_blanco Lista_Color">
+                    <div>
+                        <img style="text-align: center;" src="./img/report.jpg" width="35px">
+                    </div>
+                   <div class="En_linea">
+                    <p class="margin_mapa"><a class="a2" href="">Reports</a></p>
+                   </div>
+                   </div>
+                   <div class="cuadro_menu Separar2">
+                    <div>
+                        <img src="./img/Services.png">
+                    </div>
+                   <div class="En_linea">
+                    <p>Settings</p>
+                   </div>
+                   </div>
                 </ul>
             </div>
         </div>
         <!-- Div de la parte derecha -->
         <div class="right-area">
             <!-- div de la parte de arriba -->
-            <div>
-            <h6 class="Alinear_derecha Separar"> Jose Luis Mañon</h6>   
+            <div class="perfil">
+                <h6> Jose Luis Mañon</h6>  
+                <img class="En_linea " src="./img/Male User.png">
             </div>
             <!-- div de la parte de reporte -->
             <div class="Separar_izquierda">
-                <h1>Report</h1>
-                <h6 class="Separar">View of your water consumption report</h6>
+                <h1 class="Reporte">Report</h1>
+                <h6 class="Separar view">View of your water consumption report</h6>
             </div>
             <!-- Div de los dos cuadros juntos -->
             <div class="Separar_izquierda Cuadros" >
                 <!-- Div del primer cuadro -->
                 <div class="Cuadro" >
-                    <h4>Consumption</h4>
+                    <h4 class="view">Consumption</h4>
                     <h1>Non-potable Water</h1>
                     <h5>February 2024</h5>
                     <h6>Total consumption</h6>
@@ -51,7 +74,7 @@
                     <h1>2 K</h1>
                 </div>
                 <div class="Cuadro">
-                    <h4>Consumption</h4>
+                    <h4 class="view">Consumption</h4>
                     <h1>Non-potable Water</h1>
                     <h5>February 2024</h5>
                     <h6>Total consumption</h6>

@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800&family=Open+Sans:wght@300;400;600;800&display=swap');
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr; /* Divide en dos columnas iguales */
+    width: 100%;
+}
+
+.welcome{
+    font-size: 50px;    
+    counter-reset: #3E0FDF ;
+}
+
+.a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.overflow{
+    overflow-y: hidden;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr; /* Divide en dos columnas iguales */
+    width: 100%;
+}
+
+.left-area {
+    background-color: #f0f0f0;
+    padding:10px;
+    background-color: #3e15c9;
+    height: 711px;
+    color: #ffffff;
+    overflow: hidden;
+
+}
+
+.right-area {
+    background-color: #F3F6FF;
+    padding: 20px;
+    height: 711px;
+
+}
+
+*{
+    margin: 0%;
+    font-family: 'Inter';
+}
+
+.Logo_size{
+    padding-top: 30px;
+    width: 80px;
+    height: 80px;
+    padding-left: 0px;
+}
+
+.Logo_texto{
+  padding-left: 15px;
+  width: 120px;
+  height: 75px;
+}
+
+.Separar{
+    margin-bottom: 10px;
+}
+
+.Separar2{
+    margin-bottom: 30px;
+}
+
+.Separar_izquierda{
+    margin-left: 40px;
+}
+
+.Lista_estilo{
+    list-style: none;
+    padding: 0px;
+    font-size: 24px;
+    margin-left: 10px ;
+}
+
+.Lista_Color{
+    color: #0032B9 ;
+}
+
+h1{
+    font-size: 40px;
+    color: #0C1B6B;
+    font-weight:300;
+}
+
+h4{
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.h4e{
+    font-size: 20px;
+}
+
+h5{
+    margin-bottom: 40px;
+}
+
+h6{
+    font-size: 18px;
+}
+
+.Alinear_derecha{
+    text-align:right;
+}
+
+.Cuadro{
+    text-align: center;
+    margin-bottom: 0px;
+    border-radius: 20px;
+    padding-bottom: 5px;
+}
+
+.Cuadros{
+   display: grid;
+   grid-template-columns:2fr 2fr;
+   grid-template-rows: 200px;
+   grid-auto-columns: auto;
+   gap: 10px;
+}
+
+.Cuadros2{
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns:1.2fr 1.2fr 1fr;
+    gap: 20px;
+ }
+
+.Misma_linea{
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    display: inline-block;
+    text-align: right;
+}
+
+.Color_cuadro{
+    background-color: #3E0FDF;
+    margin-top: 10px;
+    margin-bottom: 39px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    width: 140px;
+    height: 65px;
+}
+
+.Separar_enboton{
+    margin-top:  11px;
+}
+
+.Quitar_color{
+    background-color: #F3F6FF;
+    color: #0C1B6B;
+
+}
+
+.Color_blanco{
+background-color: white;
+border-radius: 10px;
+}
+
+.Centrar_puntos{
+
+    margin-top:27px ;
+    margin-left: 40px;
+}
+
+.canvas{
+    width: 180px;
+    height: 140px;
+     margin-left: 50px;
+}
+
+.margen_grafico{
+    margin: 10px;
+}
+
+.Separar_arriba{
+    margin-top: 60px;
+}
+
+.En_linea{
+    display: inline-block;
+}
+
+.cuadro_menu{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+
+.margin_mapa{
+    margin-top: 5px;
+}
+
+.boton_menu{
+    padding: 7px;
+}
+
+.perfil{
+    display: flex;
+    justify-content: flex-end;
+     align-items: center;
+}
+
+.flex_margin{
+    display: flex;
+     margin-top: 10px;
+}
+
+.flex_margin2{
+    display: flex;
+    margin-right: 20px;
+     
+}
