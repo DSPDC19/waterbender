@@ -26,10 +26,10 @@ const app = initializeApp(firebaseConfig);
 const db = getDatabase();
 
 // Escucha cambios en la referencia específica (por ejemplo, "/main")
-const temperaturaRef = ref(db, "/main/temperatura/");
+const temperaturaRef = ref(db, "/main/caudal/");
 onValue(temperaturaRef, (snapshot) => {
   const temp = snapshot.val();
   temperatura.innerHTML = temp;
-  console.log("Temperatura en tiempo real:", temp);
+  console.log("Caudal en tiempo real:", temp);
 });
 

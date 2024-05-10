@@ -32,3 +32,9 @@ onValue(nonPotableRef, (snapshot) => {
     nonPotableWater.innerHTML=nPot.toFixed(2);
     console.log("No Potable: ", nPot.toFixed(2));
 })
+
+onValue(potableRef, (snapshot) => {
+  const Pot=snapshot.val();
+  potableWater.innerHTML=Pot.toFixed(2);
+  console.log("No Potable: ", Pot.toFixed(2));
+})
